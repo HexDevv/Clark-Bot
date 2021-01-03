@@ -253,14 +253,14 @@ client.on('message', async msg => {
     }
     
     if (msgcontent.includes('reboot')) {
-        if (msg.author.id == 201124404254605312 || 189400912333111297) {
+        if (msg.author.id == 201124404254605312 || 189400912333111297 || 278627940403773441) {
             await msg.reply('rebooting sec.');
             process.exit(1)
         }
     }
     
     if (msgcontent.includes('pull')) {
-        if (msg.author.id == 201124404254605312 || 189400912333111297) {
+        if (msg.author.id == 201124404254605312 || 189400912333111297 || 278627940403773441) {
             const m = await msg.reply('pulling sec.');
             await exec('cd ./ && git pull');
             m.edit('pulled successfully');
