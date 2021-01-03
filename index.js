@@ -251,11 +251,6 @@ client.on('message', async msg => {
         const m = await msg.channel.send('ping');
         m.edit(`pong! ${msg.createdTimestamp - m.createdTimestamp}ms`);
     }
-
-    if (msgcontent.includes('testelliott')) {
-        const m = await msg.channel.send('ping');
-        m.edit(`pong! ${msg.createdTimestamp - m.createdTimestamp}ms`);
-    }
     
     if (msgcontent.includes('reboot')) {
         if (msg.author.id == 201124404254605312 || 189400912333111297 || 278627940403773441) {
