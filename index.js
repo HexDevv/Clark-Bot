@@ -7,6 +7,8 @@ const client = new Discord.Client();
 const { exec } = require('child_process');
 require('dotenv').config();
 
+
+// dog shit quotes smh
 const ZaneQuoteList = [
     'think he rocketed into space',
     'no i will eat ur melon',
