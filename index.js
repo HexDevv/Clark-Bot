@@ -235,7 +235,7 @@ const ZaneQuoteList = [
 ]
 
 client.on('ready', () => {
-    client.user.setPresence({activity: {name: 'aqua', type:'LISTENING'}});
+    client.user.setPresence({activity: {name: 'aqua.sike', type:'LISTENING'}});
 });
 
 client.on('message', async msg => {
