@@ -256,7 +256,6 @@ client.on('message', async msg => {
         if (msg.author.id == 201124404254605312 || 189400912333111297 || 278627940403773441) {
             await msg.reply('rebooting sec.');
             process.exit(1)
-            m.edit('rebooted successfully');
         }
     }
     
