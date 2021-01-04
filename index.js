@@ -249,7 +249,7 @@ client.on('message', async msg => {
     
     if (msgcontent.includes('ping')) {
         const m = await msg.channel.send('ping');
-        m.edit(`pong! ${msg.createdTimestamp - m.createdTimestamp}ms`);
+        m.edit(`pong! ${m.createdTimestamp - msg.createdTimestamp}ms`);
     }
     
     if (msgcontent.includes('reboot')) {
