@@ -18,6 +18,14 @@ client.on('ready', () => {
 client.on('message', async msg => {
     const msgcontent = msg.content.toLowerCase();
     if (!msgcontent.startsWith('hey zane')) return;
+
+    if (msgcontent.includes('refresh quotes')) {
+        if (msg.author.id == 201124404254605312 || 189400912333111297 || 278627940403773441) {
+            delete require.cache['./quotes.json'];
+            return msg.channel.send('refreshed my quotes');
+        }
+    }
+
     if (msgcontent.includes('quotes') || msgcontent.includes('quote')) {
         const ClarkQuote = new Discord.MessageEmbed;
         await ClarkQuote.setDescription(ZaneQuoteList[Math.floor(Math.random()*ZaneQuoteList.length)]);
