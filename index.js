@@ -12,6 +12,7 @@ require('dotenv').config();
 const ZaneQuoteList = require('./quotes.json');
 
 client.on('ready', () => {
+    console.log('fockin logged in hi im keyfm owner zane');
     client.user.setPresence({activity: {name: 'aqua.sike', type:'LISTENING'}});
 });
 
